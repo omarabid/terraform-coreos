@@ -12,7 +12,7 @@ variable "coreos_setup" {
 
 	# Install Consul
 	sudo mkdir -p /opt/bin
-	wget https://releases.hashicorp.com/consul/1.0.7/consul_1.0.7_linux_amd64.zip
+	wget https://releases.hashicorp.com/consul/1.2.1/consul_1.2.1_linux_amd64.zip
 	unzip consul_*.zip
 	sudo mv consul /opt/bin/consul
 	sudo useradd -m consul
@@ -22,7 +22,7 @@ variable "coreos_setup" {
 	sudo chown consul: /var/consul
 
 	# Install Nomad
-	wget https://releases.hashicorp.com/nomad/0.8.3/nomad_0.8.3_linux_amd64.zip 
+	wget https://releases.hashicorp.com/nomad/0.8.4/nomad_0.8.4_linux_amd64.zip 
 	unzip nomad_*.zip
 	sudo mv nomad /opt/bin/nomad
 	sudo useradd -m nomad
@@ -32,7 +32,7 @@ variable "coreos_setup" {
 	sudo chown nomad: /var/nomad
 
 	# Install Vault
-	wget https://releases.hashicorp.com/vault/0.10.1/vault_0.10.1_linux_amd64.zip 
+	wget https://releases.hashicorp.com/vault/0.10.3/vault_0.10.3_linux_amd64.zip 
 	unzip vault_*.zip
 	sudo mv vault /opt/bin/vault
 	sudo useradd -m vault
